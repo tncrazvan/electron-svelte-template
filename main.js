@@ -2,7 +2,6 @@
 const {app, BrowserWindow} = require('electron')
 const path = require('path')
 const electron = require('electron')
-
 // Enable live reload for all the files inside your project directory
 require('electron-reload')(__dirname+"/public", {
   // Note that the path to electron may vary according to the main file
@@ -15,7 +14,8 @@ function createWindow () {
     width: 800,
     height: 600,
     webPreferences: {
-      preload: path.join(__dirname, 'preload.js')
+      preload: path.join(__dirname, 'preload.js'),
+      devTools: true
     },
     frame: true
   })
