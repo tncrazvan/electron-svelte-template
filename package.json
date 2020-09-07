@@ -6,7 +6,7 @@
   "scripts": {
     "electron": "electron .",
     "build": "rollup -c",
-    "watch": "rollup -c -w",
+    "dev": "rollup -c -w",
     "start": "sirv public",
     "validate": "svelte-check"
   },
